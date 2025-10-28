@@ -1,17 +1,17 @@
 # Contents
 
-[1-Headings](#1-headings)\
-[2-Block of Words/Citation](#2-block-of-words)\
-[3-Line Breaks](#3-lines-breaks)\
-[4-Combine two things](#4-combine-two-things)\
-[5-Face of text](#5-face-of-text)\
-[6-Bullets](#6-bullet-pointslists)\
-[7-Line Breaks](#7-line-breaks-or-page-breaks)\
-[8-Links](#8-links-and-hyperlinks)\
-[9-Images Links](#9--images-and-figures-with-link)\
-[10-Block of codes](#10--adding-code-or-code-block)\
-[11-Tables](#11--adding-tables)\
-[12-Extensions](#12--extensions)
+[1-Headings](#-1--headings)\
+[2-Block of Words/Citation](#-2--block-of-words)\
+[3-Line Spacing](#️-3--line-spacing)\
+[4-Combine two things](#-4--combine-two-things)\
+[5-Face of text](#️-5-face-of-text)\
+[6-Bullets](#-6--bullet-pointslists)\
+[7-Line Breaks](#-7--line-breaks-or-page-breaks)\
+[8-Links](#-8--links-and-hyperlinks)\
+[9-Images Links](#️-9--images-and-figures-with-link)\
+[10-Block of codes](#-10--adding-code-or-code-block)\
+[11-Tables](#-11--adding-tables)\
+[12-Extensions](#-12--extensions)
 
 # 📘 1- Headings
 
@@ -36,7 +36,7 @@ If we use two lines for Block of Word for second line spacing we must enter two 
 >
 >Like this
 
-# ↩️ 3-Lines Breaks
+# ↩️ 3- Line Spacing
 
 Hear we can use spaces between line in two ways first we read double space and sencond is inverted /end of sentence.\
 This is codanics class room comes in second line
