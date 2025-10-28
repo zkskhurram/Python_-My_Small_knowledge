@@ -39,11 +39,6 @@ type(greetings)
 ```
 
     <class 'str'>
-
-
-
-
-
     str
 
 
