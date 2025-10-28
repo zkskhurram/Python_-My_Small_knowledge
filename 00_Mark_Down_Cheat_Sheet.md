@@ -134,7 +134,7 @@ For Refrences see playlist [Here][Codanics]
 TTo join this course please scan the following QR code and join telegram group :(Example)\
 Always start with sign of inclamation!\
 With in Same Directory Link
-![QR](qr.png)
+![QR](QR.png)
 
 Online Picture:\
 ![Picture](https://1drv.ms/i/c/784cfe8c0a2e4310/EeF7Q9bapwZNntE9FZsOnRkBYIQ_ixkQVRHW7GFEukEU-Q?e=vue1sf)
