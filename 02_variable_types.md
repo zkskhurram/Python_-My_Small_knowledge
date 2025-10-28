@@ -137,4 +137,4 @@ print(type(complex)) # Output <class 'complex'>
     <class 'complex'>
 
 
-![Figure_02:](fig02.png)
+![Figure_02:](Fig02.png)
