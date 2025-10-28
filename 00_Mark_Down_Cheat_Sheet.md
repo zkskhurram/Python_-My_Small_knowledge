@@ -13,200 +13,180 @@
 [11-Tables](#11--adding-tables)\
 [12-Extensions](#12--extensions)
 
-# 📘 1 - Headings
+# 📘 1- Headings
 
-How to insert headings in a Markdown file?
-
+How Insert Headings in Markdown File?
 # Heading 1
 ## Heading 2
 ### Heading 3
 #### Heading 4
 ##### Heading 5
 ###### Heading 6
+Up to Six Headins we can use in Markdown!
 
-Up to six headings can be used in Markdown!
+# 💬 2- Block of Words
 
----
+This is Normal Line in Markdown
+>This is Block of Word Line start with greate teh sign.
 
-# 💬 2 - Block of Words / Citation
 
-This is a normal line in Markdown.
+If we use two lines for Block of Word for second line spacing we must enter two time (Mean two line spaces)
 
-> This is a block of quoted text. It starts with a greater-than sign.
+>If we want Block of Word for space line we must put greater then sign statring for space line.
+>
+>Like this
 
-If we use two lines for a block of words, for the second line spacing we must enter two line breaks.
+# ↩️ 3-Lines Breaks
 
-> If we want a block of text with spacing, we must put a greater-than sign at the start of each line.  
->  
-> Like this.
+Hear we can use spaces between line in two ways first we read double space and sencond is inverted /end of sentence.\
+This is codanics class room comes in second line
 
----
+# 🔗 4- Combine two things
 
-# ↩️ 3 - Line Breaks
+Block of Word and Headings
+> ## Heaidngs 2
+See Example
 
-We can create spaces between lines in two ways: using double spaces or a backslash (`\`) at the end of a sentence.  
-This is Codanics classroom — appears on the second line.
+# ✍️ 5-Face of text
 
----
+Bold **Bold**\
+Use two asteric both side word to be Bold\
+Italic *Italic*\
+Use one asteric both side word to be Italic\
+Bold and Italic  ***Bold and Italic***\
+Use three asteric both side word to be Bold\
 
-# 🔗 4 - Combine Two Things
+There is another way too\
+Bold __Bold__\
+Use two time undescore both side word to be Bold\
+Italic _Italic_\
+Use one time undescore both side word to be Italic\
+Bold and Italic  ___Bold and Italic___\
+Use three time undescore both side word to be Bold
 
-We can combine block quotes and headings:
+# 📝 6- Bullet Points/Lists
 
-> ## Example Heading 2
-
----
-
-# ✍️ 5 - Face of Text (Text Styles)
-
-**Bold:** `**Bold**` → **Bold**  
-*Italic:* `*Italic*` → *Italic*  
-***Bold & Italic:*** `***Bold and Italic***` → ***Bold and Italic***
-
-Alternate method using underscores:
-
-__Bold__ → `__Bold__`  
-_Italic_ → `_Italic_`  
-___Bold & Italic___ → `___Bold and Italic___`
-
----
-
-# 📝 6 - Bullet Points / Lists
-
-We have three ways to make lists.
-
-**1️⃣ Numeric List (auto-numbered):**
-1. Day01 (Main List)
+We have three way to make Lists
+>Numeric List\
+(Makrdown Auto count number if you forget to put)
+1. Day01  (Main List)
 1. Day02
 1. Day03
-1. Day04  
-   1. Day04a (Sub List)  
-   2. Day04b  
-      1. Day04ab (List inside Sub List)
-
-**2️⃣ Symbol Lists (-, +, *):**
-
-With `-` (hyphen):
-- Day01
+1. Day04
+   1. Day04a  (Sub List)
+   2. Day04b
+        1. Day04ab (List in Sub List)
+>List with symbols (- , + ,*)
+>With - (Hyphen)
+- Day01  (Main List)
 - Day02
-  - Day02a
-  - Day02b
-
-With `+` (plus):
-+ Day01
+- Day03
+- Day04
+   - Day04a  (Sub List)
+   - Day04b
+        - Day04ab (List in Sub List)
+>With + (Plus)
++ Day01  (Main List)
 + Day02
-  + Day02a
-
-With `*` (asterisk):
-* Day01
++ Day03
++ Day04
+   + Day04a  (Sub List)
+   + Day04b
+        + Day04ab (List in Sub List)
+>With * (Asteric)
+* Day01  (Main List)
 * Day02
-  * Day02a
+* Day03
+* Day04
+   * Day04a  (Sub List)
+   * Day04b
+        * Day04ab (List in Sub List)
 
+# 🧩 7- Line breaks or page breaks
+
+Alos we have three ways to draw line between two sentenses or objects\
+>List with symbols (-(Hyphen),_(Underscore)*(Asteric))
+
+For Example here we have two lines we sue all three ways to draw line
+
+This is page 1
 ---
-
-# 🧩 7 - Line Breaks / Page Breaks
-
-We can draw lines between sections using three symbols: `-`, `_`, or `*`.
-
-Example:
-
-This is page 1  
----  
-___  
-***  
+___
+***
 This is page 2
 
----
+# 🔗 8- Links and HyperLinks
 
-# 🔗 8 - Links and Hyperlinks
+1. Hyperlink
+https://www.youtube.com/@Codanics/playlists
 
-1. **Direct hyperlink:**  
-   https://www.youtube.com/@Codanics/playlists
+2. Link\
+[See Full Playlist of Codanics Here](https://www.youtube.com/@Codanics/playlists)
 
-2. **Named link:**  
-   [See Full Playlist of Codanics Here](https://www.youtube.com/@Codanics/playlists)
+3. Key to use link again and again i make only one word in place full link paste
 
-3. **Reusable reference link:**
+[Codanics]:https://www.youtube.com/@Codanics/playlists
 
-   ```markdown
-   [Codanics]: https://www.youtube.com/@Codanics/playlists
-   ```
+For Refrences see playlist [Here][Codanics]
 
-   For references, see playlist [Here][Codanics]
+# 🖼️ 9- Images and Figures with link
 
----
-
-# 🖼️ 9 - Images and Figures with Links
-
-Example: To join this course, please scan the following QR code.
-
-**Image in same directory:**  
-`![QR](qr.png)`  
+TTo join this course please scan the following QR code and join telegram group :(Example)\
+Always start with sign of inclamation!\
+With in Same Directory Link
 ![QR](qr.png)
 
-**Online Picture:**  
-`![Picture](https://1drv.ms/i/c/784cfe8c0a2e4310/EeF7Q9bapwZNntE9FZsOnRkBYIQ_ixkQVRHW7GFEukEU-Q?e=vue1sf)`  
+Online Picture:\
 ![Picture](https://1drv.ms/i/c/784cfe8c0a2e4310/EeF7Q9bapwZNntE9FZsOnRkBYIQ_ixkQVRHW7GFEukEU-Q?e=vue1sf)
 
----
+# 💻 10- Adding code or code block
 
-# 💻 10 - Adding Code or Code Blocks
+Adding code inside sentense
+To print a string use `Print("Codanics")`
 
-**Inline code:**  
-To print a string use `print("Codanics")`
-
-**Block of code:**
-
+Using Block of code
 ```
-x = 5 + 6
-y = 3 - 2
+x = 5+6
+Y = 3-2
 print(z)
 ```
+See difference\
+Use of Code Block foe different Languages
 
-**Language-specific code blocks:**
-
-> Python syntax highlighting
+> This code with show color according
+to Python language syntax.
 ```python
-x = 5 + 6
-y = 3 - 2
-print(z)
-```
-
-> R syntax highlighting
+X = 5+6
+Y = 3-2
+print (z)
+````
+> This code with show color according
+to R language syntax
 ```r
-x = 5 + 6
-y = 3 - 2
+X = 5+6
+y = 32
+print(z)
+```
+> This code with show color according
+to HTML language syntax
+```html
+X = 5+6
+y = 32
 print(z)
 ```
 
-> HTML syntax highlighting
-```html
-<h1>Hello World</h1>
-<p>This is HTML code.</p>
-```
+# 📊 11- Adding Tables
 
----
-
-# 📊 11 - Adding Tables
-
-| Species | Petal Length | Sepal Length |
-|:--------:|:-------------:|:-------------:|
-| Virginica | 18.2 | 19.2 |
-| Setosa | 15.1 | 17.2 |
-| Versicolor | 12.2 | 12.2 |
-| Virginica | 18.2 | 19.2 |
-| Setosa | 15.1 | 17.2 |
-| Versicolor | 12.2 | 12.2 |
-
-*To align text in tables, use colons (`:`) in the second line — left, right, or both sides for center alignment.*
-
----
-
-# 🧠 12 - Extensions
-
-> We install extensions using the keyboard or command line, and save files with different extensions when needed.
+|species | petal _ length | sepal _ length |
+| :------: | :---------: | :----------:|
+| virginica | 18.2 | 19.2 |
+| setosa | 15.1 | 17.2 |
+| versicolor | 12.2 | 12.2 |
+| virginica | 18.2 | 19.2 |
+| setosa | 15.1 | 17.2 |
+| versicolor | 12.2 | 12.2 |
 
 How we Allign text in tables we use :(colon) sign in second life left ,right and for middle test both side
 
-# 12- Extensions
+# 🧠 12- Extensions
 >we install extensions same work done with KeyBoard and to save File with different extensions.
