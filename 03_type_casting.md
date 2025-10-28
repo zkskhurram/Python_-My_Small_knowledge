@@ -156,4 +156,4 @@ print(type(bool_empty_list)) # Output: < class ‘bool’ >
     <class 'bool'>
 
 
-![Figure03:](fig03.jpg)
+![Figure03:](Fig03.jpg)
