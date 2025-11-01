@@ -58,7 +58,7 @@ These projects reflect my ability to collect, clean, visualize, and analyze data
 ## 💬 **Contact**
 **Khurram Shahzad** (Mentor:**Dr.Aammar Tufail**)\
 Travel Consultant | Data Enthusiast  
-📧 Email: khurramamq@gmail.com
+📧 Email: khurramamq@gmail.com \
 🔗 LinkedIn: [https://www.linkedin.com/in/khurram-shahzad-939158341/](https://www.linkedin.com/in/khurram-shahzad-939158341/)  
 🌍 Location: Kuwait  
 
