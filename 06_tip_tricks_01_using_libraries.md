@@ -1,7 +1,10 @@
-🖊️ **Author:** Khurram Shahzad  
-🎓 **Mentor:** Dr. Ammar Tufail  
-🔗 **LinkedIn:** [Khurram Shahzad](https://www.linkedin.com/in/khurram-shahzad-939158341/)
+💡# **tip_tricks_01_using_libraries**
+🖊️# **Author**  : Khurram Shahzad 
+🎓# **Mentor**  : Dr. Aammar Tufail
+🔗# **Contact** : khurramamq@gmail.com // [https://github.com/zkskhurram/Python_-My_Small_knowledge/edit/main](https://github.com/zkskhurram/Python_-My_Small_knowledge/tree/main)
 
+⚙️ Overview
+When working in Python, libraries make your life easier — they’re ready-made toolkits that save time, prevent code repetition, and bring powerful functions for data, AI, and automation.
 ---
 
 # 📘 01 - How to find the version of pandas
