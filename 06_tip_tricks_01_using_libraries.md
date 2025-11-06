@@ -1,36 +1,62 @@
-💡 **Subject** : tip_tricks_01_using_libraries\
-🖊️ **Author**  : Khurram Shahzad \
-🎓 **Mentor**  : Dr. Aammar Tufail\
-🔗 **Contact** : khurramamq@gmail.com // [https://github.com/zkskhurram/Python_-My_Small_knowledge/edit/main](https://github.com/zkskhurram/Python_-My_Small_knowledge/tree/main)
+---
+jupyter:
+  kernelspec:
+    display_name: .venv
+    language: python
+    name: python3
+  language_info:
+    codemirror_mode:
+      name: ipython
+      version: 3
+    file_extension: .py
+    mimetype: text/x-python
+    name: python
+    nbconvert_exporter: python
+    pygments_lexer: ipython3
+    version: 3.13.7
+  nbformat: 4
+  nbformat_minor: 2
+---
 
-⚙️ Overview\
-When working in Python, libraries make your life easier — they’re ready-made toolkits that save time, prevent code repetition, and bring powerful functions for data, AI, and automation.
+::: {.cell .markdown}
+💡 **Subject** : tip_tricks_01_using_libraries
+🖊️ **Author** : Khurram Shahzad
+🎓 **Mentor** : Dr. Aammar Tufail
+🔗 **Contact** : <khurramamq@gmail.com> //
+[https://github.com/zkskhurram/Python\_-My_Small_knowledge/edit/main](https://github.com/zkskhurram/Python_-My_Small_knowledge/tree/main)
 
-# 01 - How to find the version of pandas
+⚙️ Overview
+When working in Python, libraries make your life easier --- they're
+ready-made toolkits that save time, prevent code repetition, and bring
+powerful functions for data, AI, and automation.
+:::
 
+::: {.cell .markdown}
+## 🧩 01 - How to find the version of pandas {#01---how-to-find-the-version-of-pandas}
+:::
 
-```python
+::: {.cell .code execution_count="1"}
+``` python
 # First cell to check pandas version
 
 import pandas as pd
 pd.__version__
 ```
 
-
-
-
+::: {.output .execute_result execution_count="1"}
     '2.3.3'
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="2"}
+``` python
 # Second cell to show pandas version details
 
 pd.show_versions ()
 ```
 
-    
+::: {.output .stream .stdout}
+
     INSTALLED VERSIONS
     ------------------
     commit                : 9c8bc3e55188c8aff37207a74f1dd144980b8874
@@ -45,7 +71,7 @@ pd.show_versions ()
     LC_ALL                : None
     LANG                  : None
     LOCALE                : English_United States.1252
-    
+
     pandas                : 2.3.3
     numpy                 : 2.3.4
     pytz                  : 2025.2
@@ -92,13 +118,17 @@ pd.show_versions ()
     tzdata                : 2025.2
     qtpy                  : None
     pyqt5                 : None
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 02- Make a data frame {#02--make-a-data-frame}
 
-# 02- Make a data frame
 Here I am using `df` as variable for my primary dataset.
+:::
 
-
-```python
+::: {.cell .code execution_count="3"}
+``` python
 # primary dataframe creation
 
 df=pd.DataFrame({'A Col':[1,2,3,4,5,6,7,8],'B Col':[11,12,13,14,15,16,17,18]})
@@ -106,9 +136,8 @@ df=pd.DataFrame({'A Col':[1,2,3,4,5,6,7,8],'B Col':[11,12,13,14,15,16,17,18]})
 df
 ```
 
-
-
-
+::: {.output .execute_result execution_count="3"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -175,11 +204,12 @@ df
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="4"}
+``` python
 # Numpy array use to create Primary Dataframe
 
 import numpy as np
@@ -191,14 +221,14 @@ print(arr) # print numpy array
 pd.DataFrame(arr) # convert numpy array to dataframe
 ```
 
+::: {.output .stream .stdout}
     [[1 2 3]
      [4 5 6]
      [7 8 9]]
+:::
 
-
-
-
-
+::: {.output .execute_result execution_count="4"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -244,11 +274,12 @@ pd.DataFrame(arr) # convert numpy array to dataframe
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="5"}
+``` python
 # Numpy array Dataframe
 
 pd.DataFrame(np.random.rand(4,8)) 
@@ -256,9 +287,8 @@ pd.DataFrame(np.random.rand(4,8))
 # Create DataFrame from random numbers using numpy array
 ```
 
-
-
-
+::: {.output .execute_result execution_count="5"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -335,11 +365,12 @@ pd.DataFrame(np.random.rand(4,8))
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="6"}
+``` python
 # Numpy array Dataframe with Columns using list
 
 pd.DataFrame(np.random.rand(4,8),columns=list('ABCDEFGH'))
@@ -347,9 +378,8 @@ pd.DataFrame(np.random.rand(4,8),columns=list('ABCDEFGH'))
 # Create DataFrame from random numbers using numpy array with column names assigned
 ```
 
-
-
-
+::: {.output .execute_result execution_count="6"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -426,23 +456,26 @@ pd.DataFrame(np.random.rand(4,8),columns=list('ABCDEFGH'))
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 3- How to rename columns {#3--how-to-rename-columns}
 
-
-# 3- How to rename columns
 Here I am using `rename_column` as variable for my primary dataset.
+:::
 
-
-```python
+::: {.cell .code execution_count="7"}
+``` python
 # Primary Dataframe using dictionary
 
 rename_column=pd.DataFrame({'A Col':[1,2,3,4,5,6],'B Col':[11,12,13,14,15,16]})
 rename_column
 ```
 
-
-
-
+::: {.output .execute_result execution_count="7"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -499,11 +532,12 @@ rename_column
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="8"}
+``` python
 # First way to rename column
 
 rename_column.rename(columns={'A Col': 'Col_A', 'B Col':'Col_B'},inplace=True)
@@ -513,9 +547,8 @@ rename_column
 # The keys of the dictionary are the current column names, and the values are the new column names.
 ```
 
-
-
-
+::: {.output .execute_result execution_count="8"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -572,11 +605,12 @@ rename_column
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="9"}
+``` python
 # Second way to rename column
 
 rename_column.columns=['column _ a','column _ b']
@@ -585,9 +619,8 @@ rename_column
 # To get the column names as a list of lists 
 ```
 
-
-
-
+::: {.output .execute_result execution_count="9"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -644,11 +677,12 @@ rename_column
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="10"}
+``` python
 # to replace any character, string
 
 rename_column.columns = rename_column.columns.str.replace('_', '*', regex=False)
@@ -656,9 +690,9 @@ print(rename_column)
 
 # Use the str.replace() method on the columns attribute to replace characters in column names.
 
-
 ```
 
+::: {.output .stream .stdout}
        column * a  column * b
     0           1          11
     1           2          12
@@ -666,19 +700,19 @@ print(rename_column)
     3           4          14
     4           5          15
     5           6          16
+:::
+:::
 
-
-
-```python
+::: {.cell .code}
+``` python
 # Adding Prefix to column
 
 rename_column=rename_column.add_prefix('this is ') # adding prefix to column names
 rename_column
 ```
 
-
-
-
+::: {.output .execute_result execution_count="11"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -735,19 +769,19 @@ rename_column
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="12"}
+``` python
 # Adding Suffix to column
 rename_column=rename_column.add_suffix(' #') # adding suffix to column names
 rename_column
 ```
 
-
-
-
+::: {.output .execute_result execution_count="12"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -804,20 +838,20 @@ rename_column
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="13"}
+``` python
 # Rename Column
 rename_column.columns=['Column 1','Column 2']
 rename_column
 # use the column names as a list of lists
 ```
 
-
-
-
+::: {.output .execute_result execution_count="13"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -874,16 +908,23 @@ rename_column
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 4- Using template data {#4--using-template-data}
 
+Here I am using `boat` as variable for `seaborn` librariry dataset
+`titanic`.
+Here I am using `flower` as variable for `seaborn` librariry dataset
+`iris`.
+Here I am using `tip` as variable for `seaborn` librariry dataset
+`tips`.
+:::
 
-# 4- Using template data
-Here I am using  `boat` as variable for `seaborn` librariry dataset `titanic`.\
-Here I am using  `flower` as variable for `seaborn` librariry dataset `iris`.\
-Here I am using  `tip` as variable for `seaborn` librariry dataset `tips`.
-
-
-```python
+::: {.cell .code execution_count="14"}
+``` python
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -891,12 +932,10 @@ import seaborn as sns
 boat=sns.load_dataset('titanic')
 boat.head()
 
-
 ```
 
-
-
-
+::: {.output .execute_result execution_count="14"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1026,11 +1065,12 @@ boat.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code}
+``` python
 # summary statistics
 
 boat.describe()
@@ -1040,18 +1080,16 @@ boat.describe()
 boat.columns
 ```
 
-
-
-
+::: {.output .execute_result execution_count="15"}
     Index(['survived', 'pclass', 'sex', 'age', 'sibsp', 'parch', 'fare',
            'embarked', 'class', 'who', 'adult_male', 'deck', 'embark_town',
            'alive', 'alone'],
           dtype='object')
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="16"}
+``` python
 # Save DataFrame to CSV
 
 boat.to_csv('titanic_save.csv')
@@ -1062,21 +1100,20 @@ boat.to_excel('titanic_save.xlsx')
 
 boat.to_markdown('titanic_save.md')
 ```
+:::
 
-
-```python
+::: {.cell .code execution_count="17"}
+``` python
 import pandas as pd
 import numpy as np
 import seaborn as sns
 
 flower=sns.load_dataset('iris')
 flower.head()
-
 ```
 
-
-
-
+::: {.output .execute_result execution_count="17"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1146,18 +1183,20 @@ flower.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="18"}
+``` python
 # Save DataFrame to CSV
 
 flower.to_csv('iris_save.csv')
 ```
+:::
 
-
-```python
+::: {.cell .code execution_count="19"}
+``` python
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -1166,9 +1205,8 @@ tip=sns.load_dataset('tips')
 tip.head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="19"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1250,19 +1288,18 @@ tip.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="123"}
+``` python
 # Summry statistics
 
 tip.describe
 ```
 
-
-
-
+::: {.output .execute_result execution_count="123"}
     <bound method NDFrame.describe of      total_bill   tip     sex smoker   day    time  size
     0         16.99  1.01  Female     No   Sun  Dinner     2
     1         10.34  1.66    Male     No   Sun  Dinner     3
@@ -1275,32 +1312,36 @@ tip.describe
     241       22.67  2.00    Male    Yes   Sat  Dinner     2
     242       17.82  1.75    Male     No   Sat  Dinner     2
     243       18.78  3.00  Female     No  Thur  Dinner     2
-    
+
     [244 rows x 7 columns]>
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="21"}
+``` python
 # Saving a Dataset to CSV
  
 tip.to_csv('tips_save.csv')
 ```
+:::
 
-# 5- Using your own data
-Here I am using  `own_data` as variable for `seaborn` librariry dataset `titanic`..
+::: {.cell .markdown}
+## 🧩 5- Using your own data {#5--using-your-own-data}
 
+Here I am using `own_data` as variable for `seaborn` librariry dataset
+`titanic`..
+:::
 
-```python
+::: {.cell .code execution_count="22"}
+``` python
 import pandas as pd
 
 own_data=pd.read_csv('titanic_save.csv')
 own_data.head(10)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="22"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1531,14 +1572,19 @@ own_data.head(10)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 6- Reverse Row order {#6--reverse-row-order}
 
+Here I am using `reverse_order` as variable for `seaborn` librariry
+dataset `titanic`.
+:::
 
-# 6- Reverse Row order
-Here I am using `reverse_order` as variable for `seaborn` librariry dataset `titanic`.
-
-
-```python
+::: {.cell .code execution_count="23"}
+``` python
 # Import libraries and load dataset using seaborn
 
 import seaborn as sns   
@@ -1546,12 +1592,10 @@ import pandas as pd
 
 reverse_order = sns.load_dataset('titanic')
 reverse_order.head()
-
 ```
 
-
-
-
+::: {.output .execute_result execution_count="23"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1681,11 +1725,12 @@ reverse_order.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="24"}
+``` python
 # Reverse all rows bottom to top without skipping
 
 reverse_order.loc[::-1].head(10)
@@ -1693,9 +1738,8 @@ reverse_order.loc[::-1].head(10)
 # we reverse all rows from bottom to top using .loc with slicing.
 ```
 
-
-
-
+::: {.output .execute_result execution_count="24"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1915,19 +1959,19 @@ reverse_order.loc[::-1].head(10)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="25"}
+``` python
 # Reverse rows bottom to top with skipping 5 rows
 
 reverse_order.loc[::-5].head(10)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="25"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2147,19 +2191,19 @@ reverse_order.loc[::-5].head(10)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="26"}
+``` python
 # Reset all dataframe index after reversing
 
 reverse_order.loc[::-1].reset_index(drop=True).head(10)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="26"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2379,23 +2423,26 @@ reverse_order.loc[::-1].reset_index(drop=True).head(10)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 7- Reverse Column Order {#7--reverse-column-order}
 
+Here I am using `reverse_order` as variable for `seaborn` librariry
+dataset `titanic`.
+:::
 
-# 7- Reverse Column Order
-Here I am using `reverse_order` as variable for `seaborn` librariry dataset `titanic`.
-
-
-```python
+::: {.cell .code execution_count="27"}
+``` python
 # Reverse all column names in a given DataFrame
 
 reverse_order.loc[:,::-1]
-
 ```
 
-
-
-
+::: {.output .execute_result execution_count="27"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2634,14 +2681,19 @@ reverse_order.loc[:,::-1]
 </table>
 <p>891 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 8- select a Column by datatype {#8--select-a-column-by-datatype}
 
+Here I am using `select_column` as variable for `seaborn` librariry
+dataset `titanic`.
+:::
 
-# 8- select a Column by datatype
-Here I am using `select_column` as variable for `seaborn` librariry dataset `titanic`.
-
-
-```python
+::: {.cell .code execution_count="28"}
+``` python
 # Import libraries and load dataset using seaborn
 
 import seaborn as sns   
@@ -2654,9 +2706,7 @@ select_column.dtypes
 # We use variable select_column to load the 'titanic' dataset from seaborn and display the data types of each column using the dtypes attribute.
 ```
 
-
-
-
+::: {.output .execute_result execution_count="28"}
     survived          int64
     pclass            int64
     sex              object
@@ -2673,19 +2723,18 @@ select_column.dtypes
     alive            object
     alone              bool
     dtype: object
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="29"}
+``` python
 # Only Select Numeric types
 
 select_column.select_dtypes(include='number').head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="29"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2761,19 +2810,19 @@ select_column.select_dtypes(include='number').head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="30"}
+``` python
 # Only Select object types
 
 select_column.select_dtypes(include='object').head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="30"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2843,19 +2892,19 @@ select_column.select_dtypes(include='object').head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="31"}
+``` python
 # Only Select character types
 
 select_column.select_dtypes(include='character')
 ```
 
-
-
-
+::: {.output .execute_result execution_count="31"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2914,19 +2963,19 @@ select_column.select_dtypes(include='character')
 </table>
 <p>891 rows × 0 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="32"}
+``` python
 # Only Select multiple datatypes
 
 select_column.select_dtypes(include=['object','character']).head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="32"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2996,19 +3045,19 @@ select_column.select_dtypes(include=['object','character']).head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="33"}
+``` python
 # Only Select multiple Cdatatypes
 
 select_column.select_dtypes(include=['number','object']).head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="33"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3114,19 +3163,19 @@ select_column.select_dtypes(include=['number','object']).head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="34"}
+``` python
 # exclude multiple datatypes
 
 select_column.select_dtypes(exclude=['number','character']).head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="34"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3220,14 +3269,18 @@ select_column.select_dtypes(exclude=['number','character']).head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 9- Convert string to number {#9--convert-string-to-number}
 
-
-# 9- Convert string to number
 Here I am using `type_casting` as variable for primary dataset.
+:::
 
-
-```python
+::: {.cell .code execution_count="35"}
+``` python
 # Create Primary data using dictionary
 
 type_casting = pd.DataFrame ({'A': [11, 12, 13], 
@@ -3236,9 +3289,8 @@ type_casting = pd.DataFrame ({'A': [11, 12, 13],
 type_casting
 ```
 
-
-
-
+::: {.output .execute_result execution_count="35"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3284,103 +3336,99 @@ type_casting
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="36"}
+``` python
 # All Datatypes
 
 type_casting.dtypes
 ```
 
-
-
-
+::: {.output .execute_result execution_count="36"}
     A    int64
     B    int64
     C    int64
     dtype: object
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="37"}
+``` python
 # Covert all data types to string
 
 type_casting.astype({'A':'object','B':'object','C':'object'}).dtypes
 ```
 
-
-
-
+::: {.output .execute_result execution_count="37"}
     A    object
     B    object
     C    object
     dtype: object
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="38"}
+``` python
 # convert dataset to original data types
 
 type_casting.astype({'A':'int','B':'int','C':'int'}).dtypes
 ```
 
-
-
-
+::: {.output .execute_result execution_count="38"}
     A    int64
     B    int64
     C    int64
     dtype: object
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="39"}
+``` python
 # Second way to convert dataset to original data types
 
 pd.to_numeric(type_casting['A'], errors='coerce')
 # type_casting.dtypes
 ```
 
-
-
-
+::: {.output .execute_result execution_count="39"}
     0    11
     1    12
     2    13
     Name: A, dtype: int64
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 10- Reduce dataframe size {#10--reduce-dataframe-size}
 
+Here I am using `boat_01` as variable for `seaborn` librariry dataset
+`titanic`.
+:::
 
-# 10- Reduce dataframe size
-Here I am using `boat_01` as variable for `seaborn` librariry dataset `titanic`.
-
-
-```python
+::: {.cell .code execution_count="40"}
+``` python
 # Load secondary data using the `load_secondary_data` function  
 
 boat_01=sns.load_dataset('titanic')
 boat_01.shape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="40"}
     (891, 15)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="41"}
+``` python
 # to check memory usage of dataframe 
 
 boat_01.info(memory_usage='deep')
 ```
 
+::: {.output .stream .stdout}
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 891 entries, 0 to 890
     Data columns (total 15 columns):
@@ -3403,10 +3451,11 @@ boat_01.info(memory_usage='deep')
      14  alone        891 non-null    bool    
     dtypes: bool(2), category(2), float64(2), int64(4), object(5)
     memory usage: 278.9 KB
+:::
+:::
 
-
-
-```python
+::: {.cell .code execution_count="42"}
+``` python
 # Check fraction of data with function by fraction 
 
 boat_01.sample(frac=0.1).shape
@@ -3414,18 +3463,20 @@ boat_01.sample(frac=0.1).shape
 # boat_01.sample(frac=0.1).shape --- IGNORE ---
 ```
 
-
-
-
+::: {.output .execute_result execution_count="42"}
     (89, 15)
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 11- Copy data from clipboard {#11--copy-data-from-clipboard}
 
+Here I am using `copy_board` as variable for `seaborn` librariry dataset
+`titanic`.
+:::
 
-# 11- Copy data from clipboard
-Here I am using `copy_board` as variable for `seaborn` librariry dataset `titanic`.
-
-
-```python
+::: {.cell .code execution_count="43"}
+``` python
 # import libraries and load dataset using seaborn
 
 import pandas as pd
@@ -3433,17 +3484,17 @@ import seaborn as sns
 
 copy_board=sns.load_dataset('titanic')
 ```
+:::
 
-
-```python
+::: {.cell .code execution_count="44"}
+``` python
 # read clipboard in Python it return latest data in clipboard copied by you
 df=pd.read_clipboard()
 df
 ```
 
-
-
-
+::: {.output .execute_result execution_count="44"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3469,18 +3520,18 @@ df
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="45"}
+``` python
 df=pd.read_clipboard()
 df.head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="45"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3506,16 +3557,23 @@ df.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 12- Split data into two sets {#12--split-data-into-two-sets}
 
+Here I am using `split_data` as variable for `seaborn` librariry dataset
+`titanic`
+Here I am using `split_data_1` as variable for `seaborn` librariry
+dataset `titanic`
+Here I am using `split_data_2` as variable for `seaborn` librariry
+dataset `titanic`
+:::
 
-# 12- Split data into two sets
-Here I am using `split_data` as variable for `seaborn` librariry dataset `titanic`\
-Here I am using `split_data_1` as variable for `seaborn` librariry dataset `titanic`\
-Here I am using `split_data_2` as variable for `seaborn` librariry dataset `titanic`
-
-
-```python
+::: {.cell .code execution_count="46"}
+``` python
 import pandas as pd
 import seaborn as sns
 
@@ -3523,9 +3581,8 @@ split_data=sns.load_dataset('titanic')
 split_data.head(11)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="46"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3763,38 +3820,35 @@ split_data.head(11)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="47"}
+``` python
 # Length of dataset function show rows in dataset
 
 len(split_data)  
 ```
 
-
-
-
+::: {.output .execute_result execution_count="47"}
     891
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="48"}
+``` python
 # shape of dataset function show rows and columns
 split_data.shape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="48"}
     (891, 15)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="49"}
+``` python
 # Use random number generator to generate a random number between 1 and 100
 
 from random import random
@@ -3804,38 +3858,33 @@ split_data_1.shape
 # Data split into half 
 ```
 
-
-
-
+::: {.output .execute_result execution_count="49"}
     (446, 15)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="50"}
+``` python
 # Retrive left split data 
 
 split_data_2=split_data.drop(split_data_1.index)
 split_data_2.shape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="50"}
     (445, 15)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="51"}
+``` python
 # random head data of split 1st dataset
 
 split_data_1.head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="51"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3965,19 +4014,19 @@ split_data_1.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="52"}
+``` python
 # random head data of split 2nd dataset
 
 split_data_2.head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="52"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -4107,50 +4156,48 @@ split_data_2.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="53"}
+``` python
 # Column Length of each split dataset
 
 len(split_data_2) + len(split_data_1)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="53"}
     891
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 13- Join two data sets {#13--join-two-data-sets}
+:::
 
-
-# 13- Join two data sets
-
-
-```python
+::: {.cell .code execution_count="54"}
+``` python
 # Combine both split datasets to get original dataset
 
 split_data_join = pd.concat([split_data_1, split_data_2])
 split_data_join.shape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="54"}
     (891, 15)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="55"}
+``` python
 # Reorders rows in dataset from most recent to oldest base on index
 
 split_data_join.sort_index(ascending=True)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="55"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -4389,19 +4436,19 @@ split_data_join.sort_index(ascending=True)
 </table>
 <p>891 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="56"}
+``` python
 # Reorders rows in dataset from highest to lowest based on index
 
 split_data_join.sort_index(ascending=False)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="56"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -4640,14 +4687,19 @@ split_data_join.sort_index(ascending=False)
 </table>
 <p>891 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 14- Filtring a Dataset {#14--filtring-a-dataset}
 
+Here I am using `filter_data` as variable for `seaborn` librariry
+dataset `titanic`
+:::
 
-# 14- Filtring a Dataset
-Here I am using `filter_data` as variable for `seaborn` librariry dataset `titanic`
-
-
-```python
+::: {.cell .code execution_count="57"}
+``` python
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -4658,9 +4710,8 @@ filter_data.head()
 # returns :First 5 rows of the dataframe head
 ```
 
-
-
-
+::: {.output .execute_result execution_count="57"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -4790,44 +4841,40 @@ filter_data.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="58"}
+``` python
 filter_data.shape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="58"}
     (891, 15)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="59"}
+``` python
 filter_data.sex.unique()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="59"}
     array(['male', 'female'], dtype=object)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="60"}
+``` python
 filter_data.sex.unique()
 filter_data
 
 # Return array of unique sex values
 ```
 
-
-
-
+::: {.output .execute_result execution_count="60"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -5066,19 +5113,19 @@ filter_data
 </table>
 <p>891 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="61"}
+``` python
 filter_data[(filter_data.sex=='male')]
 
 # Return the array of male individuals
 ```
 
-
-
-
+::: {.output .execute_result execution_count="61"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -5317,19 +5364,18 @@ filter_data[(filter_data.sex=='male')]
 </table>
 <p>577 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="62"}
+``` python
 filter_data.age.unique()
 
 # Return the array of unique ages
 ```
 
-
-
-
+::: {.output .execute_result execution_count="62"}
     array([22.  , 38.  , 26.  , 35.  ,   nan, 54.  ,  2.  , 27.  , 14.  ,
             4.  , 58.  , 20.  , 39.  , 55.  , 31.  , 34.  , 15.  , 28.  ,
             8.  , 19.  , 40.  , 66.  , 42.  , 21.  , 18.  ,  3.  ,  7.  ,
@@ -5340,49 +5386,43 @@ filter_data.age.unique()
            45.5 , 20.5 , 62.  , 41.  , 52.  , 63.  , 23.5 ,  0.92, 43.  ,
            60.  , 10.  , 64.  , 13.  , 48.  ,  0.75, 53.  , 57.  , 80.  ,
            70.  , 24.5 ,  6.  ,  0.67, 30.5 ,  0.42, 34.5 , 74.  ])
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="63"}
+``` python
 filter_data.embark_town.unique()
 
 # Return the number of unique embark towns
 ```
 
-
-
-
+::: {.output .execute_result execution_count="63"}
     array(['Southampton', 'Cherbourg', 'Queenstown', nan], dtype=object)
+:::
+:::
 
-
-
-
-```python
-
+::: {.cell .code execution_count="64"}
+``` python
 filter_data[(filter_data.embark_town=='Southampton')].shape
 
 # Return the number of passengers who embarked from Southampton
 ```
 
-
-
-
+::: {.output .execute_result execution_count="64"}
     (644, 15)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="65"}
+``` python
 filter_data[(filter_data.embark_town=='Southampton')
    & (filter_data.sex=="female")]
 
 # Return the number of female passengers who embarked at Southampton
 ```
 
-
-
-
+::: {.output .execute_result execution_count="65"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -5621,11 +5661,12 @@ filter_data[(filter_data.embark_town=='Southampton')
 </table>
 <p>203 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="66"}
+``` python
 filter_data[((filter_data.embark_town=='Southampton') | 
    (filter_data.embark_town=='Queenstown') )
    & (filter_data.sex=="female")]
@@ -5633,9 +5674,8 @@ filter_data[((filter_data.embark_town=='Southampton') |
 # Return the number  of female passengers who embarked at Southampton and Queenstown
 ```
 
-
-
-
+::: {.output .execute_result execution_count="66"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -5874,19 +5914,19 @@ filter_data[((filter_data.embark_town=='Southampton') |
 </table>
 <p>239 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="67"}
+``` python
 filter_data[filter_data.embark_town.isin(['Queenstown'])].head()
 
 # Return the number of passengers who embarked in Queenstown 
 ```
 
-
-
-
+::: {.output .execute_result execution_count="67"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -6016,11 +6056,12 @@ filter_data[filter_data.embark_town.isin(['Queenstown'])].head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="68"}
+``` python
 print(filter_data.shape)
 
 # Return the shape of the DataFrame Total number of rows and columns
@@ -6042,18 +6083,24 @@ print(filter_data[filter_data.age<15].shape)
 # Returns the shape of the DataFrame where age is greater than 15
 ```
 
+::: {.output .stream .stdout}
     (891, 15)
     (305, 15)
     (384, 15)
     (631, 15)
     (78, 15)
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 15- filtering with by large categories {#15--filtering-with-by-large-categories}
 
-# 15- filtering with by large categories
-Here I am using `filter_data` as variable for `seaborn` librariry dataset `titanic`
+Here I am using `filter_data` as variable for `seaborn` librariry
+dataset `titanic`
+:::
 
-
-```python
+::: {.cell .code execution_count="69"}
+``` python
 print(filter_data.embark_town.value_counts())
 
 # Return the number of rows passnegers who embarked in each town
@@ -6067,6 +6114,7 @@ print(filter_data.age.value_counts().head(6))
 # Returns the number of rows passnegers who are in each age group
 ```
 
+::: {.output .stream .stdout}
     embark_town
     Southampton    644
     Cherbourg      168
@@ -6084,10 +6132,11 @@ print(filter_data.age.value_counts().head(6))
     30.0    25
     19.0    25
     Name: count, dtype: int64
+:::
+:::
 
-
-
-```python
+::: {.cell .code execution_count="70"}
+``` python
 print(filter_data.embark_town.value_counts().nlargest(2))
 
 # Return the number of rows passnegers who embarked in each town
@@ -6104,6 +6153,7 @@ print(filter_data.age.value_counts().nlargest(3))
 # nlargest returns the n largest elements from the series
 ```
 
+::: {.output .stream .stdout}
     embark_town
     Southampton    644
     Cherbourg      168
@@ -6117,10 +6167,11 @@ print(filter_data.age.value_counts().nlargest(3))
     22.0    27
     18.0    26
     Name: count, dtype: int64
+:::
+:::
 
-
-
-```python
+::: {.cell .code execution_count="71"}
+``` python
 # Second way
 
 count=filter_data.embark_town.value_counts(2)
@@ -6132,24 +6183,20 @@ count.nlargest(2).index
 # Returns 2
 ```
 
-
-
-
+::: {.output .execute_result execution_count="71"}
     Index(['Southampton', 'Cherbourg'], dtype='object', name='embark_town')
+:::
+:::
 
-
-
-
-```python
-
+::: {.cell .code execution_count="72"}
+``` python
 filter_data[filter_data.embark_town.isin(count.nlargest(1).index)].head()
 
 # Returns the first row of the dataframe where the embark_town is the most common embark_town.
 ```
 
-
-
-
+::: {.output .execute_result execution_count="72"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -6279,19 +6326,19 @@ filter_data[filter_data.embark_town.isin(count.nlargest(1).index)].head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="73"}
+``` python
 filter_data[filter_data.embark_town.isin(count.nlargest(2).index)].head(10)
 
 # Returns the top 3 embark towns with the most passengers.
 ```
 
-
-
-
+::: {.output .execute_result execution_count="73"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -6511,19 +6558,19 @@ filter_data[filter_data.embark_town.isin(count.nlargest(2).index)].head(10)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="74"}
+``` python
 filter_data[filter_data.embark_town.isin(count.nsmallest(1).index)].head(10)
 
 # Returns the first 5 rows of the dataframe where the embark_town is in the 3 smallest towns
 ```
 
-
-
-
+::: {.output .execute_result execution_count="74"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -6743,14 +6790,18 @@ filter_data[filter_data.embark_town.isin(count.nsmallest(1).index)].head(10)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 16- Spliting a string into multiple columns {#16--spliting-a-string-into-multiple-columns}
 
-
-# 16- Spliting a string into multiple columns
 Here I am using `pm_df` as variable for my primary dataset.
+:::
 
-
-```python
+::: {.cell .code execution_count="75"}
+``` python
 # import libraries
 import pandas as pd
 # Create a Primary Dataframe using dictionaries 
@@ -6763,9 +6814,8 @@ pm_df=pd.DataFrame({'name':['Muhammad Kashif','Muhammad Hanif','Khurram Shahzad'
 pm_df
 ```
 
-
-
-
+::: {.output .execute_result execution_count="75"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -6822,20 +6872,20 @@ pm_df
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="76"}
+``` python
 # Splitting Name data frame into Two Column  
 
 pm_df.name.str.split(' ',expand=True)
  
 ```
 
-
-
-
+::: {.output .execute_result execution_count="76"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -6882,20 +6932,20 @@ pm_df.name.str.split(' ',expand=True)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="77"}
+``` python
 # Adding those splits into new cloumn
 
 pm_df[["First Name","Second Name"]]=pm_df.name.str.split(' ',expand=True)
 pm_df
 ```
 
-
-
-
+::: {.output .execute_result execution_count="77"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -6962,20 +7012,19 @@ pm_df
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="78"}
+``` python
 # Splitting Locations data frame into Two Column  
 
 pm_df.locations.str.split(',',expand=True)
-
 ```
 
-
-
-
+::: {.output .execute_result execution_count="78"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -7022,20 +7071,20 @@ pm_df.locations.str.split(',',expand=True)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="79"}
+``` python
 # Adding those splits into new cloumn
 
 pm_df[["City","Country"]]=pm_df.locations.str.split(',',expand=True)
 pm_df
 ```
 
-
-
-
+::: {.output .execute_result execution_count="79"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -7112,20 +7161,20 @@ pm_df
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="80"}
+``` python
 # Refine data manipulation
 
 pm_df = pm_df[["First Name","Second Name", "Age","Marks","City","Country"]]
 pm_df
 ```
 
-
-
-
+::: {.output .execute_result execution_count="80"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -7192,14 +7241,19 @@ pm_df
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 17- Aggregate by multiple group/function {#17--aggregate-by-multiple-groupfunction}
 
+Here I am using `agg_data` as variable for `seaborn` librariry dataset
+`titanic`
+:::
 
-# 17- Aggregate by multiple group/function
-Here I am using `agg_data` as variable for `seaborn` librariry dataset `titanic`
-
-
-```python
+::: {.cell .code execution_count="81"}
+``` python
 import pandas as pd
 import numpy as np  
 import seaborn as sns
@@ -7209,9 +7263,8 @@ agg_data=sns.load_dataset('titanic')
 agg_data
 ```
 
-
-
-
+::: {.output .execute_result execution_count="81"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -7450,19 +7503,19 @@ agg_data
 </table>
 <p>891 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="82"}
+``` python
 agg_data.groupby('who').count()
 
 # Return the count of group by object 'who'
 ```
 
-
-
-
+::: {.output .execute_result execution_count="82"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -7569,19 +7622,19 @@ agg_data.groupby('who').count()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="83"}
+``` python
 agg_data.groupby('sex').count()
 
 # Return the count of each sex 
 ```
 
-
-
-
+::: {.output .execute_result execution_count="83"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -7671,11 +7724,12 @@ agg_data.groupby('sex').count()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="84"}
+``` python
 print(agg_data.groupby('pclass')['age'].sum())
 
 # Return the sum of 'age' for each 'pclass' in the DataFrame .
@@ -7685,6 +7739,7 @@ print(agg_data.groupby('pclass')['age'].mean())
 # Return the mean of 'age' for each 'pclass' group.  # noqa: E501
 ```
 
+::: {.output .stream .stdout}
     pclass
     1    7111.42
     2    5168.83
@@ -7695,46 +7750,42 @@ print(agg_data.groupby('pclass')['age'].mean())
     2    29.877630
     3    25.140620
     Name: age, dtype: float64
+:::
+:::
 
-
-
-```python
+::: {.cell .code execution_count="85"}
+``` python
 len(agg_data.groupby('who'))
 
 # Returns numbers of rows in group by 'who' column
 ```
 
-
-
-
+::: {.output .execute_result execution_count="85"}
     3
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="86"}
+``` python
 len(agg_data.groupby('fare'))
 
 # Returns numbers of rows in group by fare column
 ```
 
-
-
-
+::: {.output .execute_result execution_count="86"}
     248
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="87"}
+``` python
 agg_data.groupby(['sex','who','pclass','embarked']).count()
 
 # Returns a DataFrame with the count of each unique combination of the specified columns.
 ```
 
-
-
-
+::: {.output .execute_result execution_count="87"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -8228,14 +8279,19 @@ agg_data.groupby(['sex','who','pclass','embarked']).count()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 18- Select Specific Rows and Column {#18--select-specific-rows-and-column}
 
+Here I am using `row_column` as variable for `seaborn` librariry dataset
+`titanic`
+:::
 
-# 18- Select Specific Rows and Column
-Here I am using `row_column` as variable for `seaborn` librariry dataset `titanic`
-
-
-```python
+::: {.cell .code execution_count="88"}
+``` python
 import pandas as pd
 import numpy as np  
 import seaborn as sns
@@ -8245,9 +8301,8 @@ row_column=sns.load_dataset('titanic')
 row_column
 ```
 
-
-
-
+::: {.output .execute_result execution_count="88"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -8486,19 +8541,19 @@ row_column
 </table>
 <p>891 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="89"}
+``` python
 row_column.head()
 
 # Print the first 5 rows of the DataFrame
 ```
 
-
-
-
+::: {.output .execute_result execution_count="89"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -8628,19 +8683,19 @@ row_column.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="90"}
+``` python
 # select Column
 
 row_column[['sex','class']].head(10)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="90"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -8717,19 +8772,19 @@ row_column[['sex','class']].head(10)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="91"}
+``` python
 row_column.describe()
 
 # Returns description  of the data
 ```
 
-
-
-
+::: {.output .execute_result execution_count="91"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -8832,11 +8887,12 @@ row_column.describe()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="92"}
+``` python
 print(row_column.describe().loc[['min','25%','50%','75%','max']])
 
 # Return the summary statistics of the DataFrame, 
@@ -8855,6 +8911,7 @@ print(row_column.describe().loc[['min','max']])
 # only min and max values
 ```
 
+::: {.output .stream .stdout}
          survived  pclass     age  sibsp  parch      fare
     min       0.0     1.0   0.420    0.0    0.0    0.0000
     25%       0.0     2.0  20.125    0.0    0.0    7.9104
@@ -8870,43 +8927,52 @@ print(row_column.describe().loc[['min','max']])
          survived  pclass    age  sibsp  parch      fare
     min       0.0     1.0   0.42    0.0    0.0    0.0000
     max       1.0     3.0  80.00    8.0    6.0  512.3292
+:::
+:::
 
-
-
-```python
+::: {.cell .code execution_count="93"}
+``` python
 print(agg_data.describe().loc['min':'max','survived':'age'])
 
 # Return the summary statistics for the 'survived' , 'pclass' and 'age' columns of the DataFrame df, excluding th
 ```
 
+::: {.output .stream .stdout}
          survived  pclass     age
     min       0.0     1.0   0.420
     25%       0.0     2.0  20.125
     50%       0.0     3.0  28.000
     75%       1.0     3.0  38.000
     max       1.0     3.0  80.000
+:::
+:::
 
-
-
-```python
+::: {.cell .code execution_count="94" notebookRunGroups="{\"groupValue\":\"1\"}"}
+``` python
 print(agg_data.describe().loc['min':'max',['survived','age']])
 
 # return the summary statistics for the 'survived' and 'age' columns of the dataframe
 ```
 
+::: {.output .stream .stdout}
          survived     age
     min       0.0   0.420
     25%       0.0  20.125
     50%       0.0  28.000
     75%       1.0  38.000
     max       1.0  80.000
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 19- Reshape multi index seies {#19--reshape-multi-index-seies}
 
-# 19- Reshape multi index seies
-Here I am using `reshape` as variable for `seaborn` librariry dataset `titanic`
+Here I am using `reshape` as variable for `seaborn` librariry dataset
+`titanic`
+:::
 
-
-```python
+::: {.cell .code execution_count="95"}
+``` python
 import pandas as pd
 import numpy as np  
 import seaborn as sns
@@ -8916,9 +8982,8 @@ reshape=sns.load_dataset('titanic')
 reshape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="95"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -9157,54 +9222,50 @@ reshape
 </table>
 <p>891 rows × 15 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="96"}
+``` python
 reshape.survived.mean()
 
 # Return the mean of the survived column in the titanic dataframe
 ```
 
-
-
-
+::: {.output .execute_result execution_count="96"}
     np.float64(0.3838383838383838)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="97"}
+``` python
 reshape.groupby('sex').survived.mean()
 
 # Return the mean survival rate for each sex
 ```
 
-
-
-
+::: {.output .execute_result execution_count="97"}
     sex
     female    0.742038
     male      0.188908
     Name: survived, dtype: float64
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="98"}
+``` python
 reshape.groupby(['sex','class']).survived.mean()
 
 # Return the mean survival rate for each sex and class 
 ```
 
+::: {.output .stream .stderr}
     C:\Users\khurr\AppData\Local\Temp\ipykernel_6404\3083093482.py:1: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       reshape.groupby(['sex','class']).survived.mean()
+:::
 
-
-
-
-
+::: {.output .execute_result execution_count="98"}
     sex     class 
     female  First     0.968085
             Second    0.921053
@@ -9213,23 +9274,23 @@ reshape.groupby(['sex','class']).survived.mean()
             Second    0.157407
             Third     0.135447
     Name: survived, dtype: float64
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="99"}
+``` python
 agg_data.groupby(['sex','class']).survived.mean().unstack()
 
 # Return the mean survival rate for each sex and class as a reshaped DataFrame
 ```
 
+::: {.output .stream .stderr}
     C:\Users\khurr\AppData\Local\Temp\ipykernel_6404\3951748357.py:1: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       agg_data.groupby(['sex','class']).survived.mean().unstack()
+:::
 
-
-
-
-
+::: {.output .execute_result execution_count="99"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -9275,22 +9336,26 @@ agg_data.groupby(['sex','class']).survived.mean().unstack()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 20- Continous to categorical data convesion {#20--continous-to-categorical-data-convesion}
 
+Here I am calling again `boat` as variable for `seaborn` librariry
+dataset `titanic`.
+:::
 
-# 20- Continous to categorical data convesion
-Here I am calling again `boat ` as variable for `seaborn` librariry dataset `titanic`.
-
-
-```python
+::: {.cell .code execution_count="100"}
+``` python
 boat.head()
 
 # Return the first 5 rows of the DataFrame
 ```
 
-
-
-
+::: {.output .execute_result execution_count="100"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -9420,15 +9485,17 @@ boat.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="101"}
+``` python
 print(boat.age.head())
 print(boat.shape)
 ```
 
+::: {.output .stream .stdout}
     0    22.0
     1    38.0
     2    26.0
@@ -9436,10 +9503,11 @@ print(boat.shape)
     4    35.0
     Name: age, dtype: float64
     (891, 15)
+:::
+:::
 
-
-
-```python
+::: {.cell .code execution_count="102"}
+``` python
 pd.cut(boat.age, bins= [0,10,18,25,50,99], labels=['Infant','child','young_adult','Adult','old']).head()
 
 # Return the bins and labels
@@ -9451,9 +9519,8 @@ boat['New _Age'] = pd.cut(boat.age, bins= [0,10,18,25,50,99], labels=['Infant','
 boat.head(10)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="102"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -9684,43 +9751,44 @@ boat.head(10)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="103"}
+``` python
 boat.shape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="103"}
     (891, 16)
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 21- Covert one set vlue to another set value {#21--covert-one-set-vlue-to-another-set-value}
 
+Here I am calling again `boat` as variable for `seaborn` librariry
+dataset `titanic`.
+:::
 
-# 21- Covert one set vlue to another set value
-Here I am calling again `boat ` as variable for `seaborn` librariry dataset `titanic`.
-
-
-```python
+::: {.cell .code execution_count="104"}
+``` python
 boat.sex.head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="104"}
     0      male
     1    female
     2    female
     3    female
     4      male
     Name: sex, dtype: object
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="105"}
+``` python
 boat['sex_num']=boat.sex.map({'male':0,'female':1})
 
 # Return the dataframe with the new column sex _num
@@ -9729,9 +9797,8 @@ boat['sex_num']=boat.sex.map({'male':0,'female':1})
 boat.head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="105"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -9873,35 +9940,32 @@ boat.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="106"}
+``` python
 boat.shape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="106"}
     (891, 17)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="107"}
+``` python
 boat.embarked.count()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="107"}
     np.int64(889)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="108"}
+``` python
 boat['embarked_num']=boat.embarked.factorize()[0]
 
 # Return the dataframe with the new column embark _num
@@ -9910,9 +9974,8 @@ boat['embarked_num']=boat.embarked.factorize()[0]
 boat.head(15)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="108"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -10270,11 +10333,12 @@ boat.head(15)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="109"}
+``` python
 boat['fare_num']=boat.fare.factorize()[0]
 
 # Return the dataframe with the new column age _num
@@ -10283,9 +10347,8 @@ boat['fare_num']=boat.fare.factorize()[0]
 boat.head(15)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="109"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -10659,21 +10722,25 @@ boat.head(15)
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 22- Transpose a wide dataframe {#22--transpose-a-wide-dataframe}
 
+Here I am using `transpose` as variable for primary dataset.
+:::
 
-# 22- Transpose a wide dataframe
-Here I am using  `transpose ` as variable for primary dataset.
-
-
-
-```python
+::: {.cell .code execution_count="110"}
+``` python
 import pandas as pd
 import numpy as np
 ```
+:::
 
-
-```python
+::: {.cell .code execution_count="111"}
+``` python
 # Creating dataframe
 
 trasnpose=pd.DataFrame(np.random.rand(200,25),columns=list('abcdefghijklmnopqrstuvwxy'))
@@ -10683,9 +10750,8 @@ trasnpose=pd.DataFrame(np.random.rand(200,25),columns=list('abcdefghijklmnopqrst
 trasnpose.head()
 ```
 
-
-
-
+::: {.output .execute_result execution_count="111"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -10852,17 +10918,17 @@ trasnpose.head()
 </table>
 <p>5 rows × 25 columns</p>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="112"}
+``` python
 trasnpose.head(10).T
 ```
 
-
-
-
+::: {.output .execute_result execution_count="112"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -11222,29 +11288,27 @@ trasnpose.head(10).T
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="113"}
+``` python
 trasnpose.shape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="113"}
     (200, 25)
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="114"}
+``` python
 trasnpose.describe().T
 ```
 
-
-
-
+::: {.output .execute_result execution_count="114"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -11552,14 +11616,18 @@ trasnpose.describe().T
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
+::: {.cell .markdown}
+## 🧩 23- Reshaping a dataframe {#23--reshaping-a-dataframe}
 
+Here I am using `reshape`,`reshape_1` as variable for primary dataset.
+:::
 
-# 23- Reshaping a dataframe
-Here I am using `reshape `,`reshape_1` as variable for primary dataset.
-
-
-```python
+::: {.cell .code execution_count="115"}
+``` python
 reshape=pd.DataFrame([['12345',100,200,400],
                       ['34567',400,500,400],
                       ['67890',700,800,900]],
@@ -11567,12 +11635,10 @@ reshape=pd.DataFrame([['12345',100,200,400],
 reshape.head()
 
 # return the first 5 rows of the dataframe
-
 ```
 
-
-
-
+::: {.output .execute_result execution_count="115"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -11622,17 +11688,17 @@ reshape.head()
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="116"}
+``` python
 reshape.head().T
 ```
 
-
-
-
+::: {.output .execute_result execution_count="116"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -11684,11 +11750,12 @@ reshape.head().T
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="117"}
+``` python
 reshape_1=pd.DataFrame([[1,'12345','factory'],
                         [2,'34567','warehouse'],
                         [3,'67890','retail']],
@@ -11696,9 +11763,8 @@ reshape_1=pd.DataFrame([[1,'12345','factory'],
 reshape_1
 ```
 
-
-
-
+::: {.output .execute_result execution_count="117"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -11744,17 +11810,17 @@ reshape_1
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="118"}
+``` python
 reshape
 ```
 
-
-
-
+::: {.output .execute_result execution_count="118"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -11804,17 +11870,17 @@ reshape
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="119"}
+``` python
 reshape.melt(id_vars='zip',var_name='location_type',value_name='distance')
 ```
 
-
-
-
+::: {.output .execute_result execution_count="119"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -11896,30 +11962,27 @@ reshape.melt(id_vars='zip',var_name='location_type',value_name='distance')
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="120"}
+``` python
 import seaborn as sns
 sns.barplot(x='zip',y='factory',data=reshape)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="120"}
     <Axes: xlabel='zip', ylabel='factory'>
+:::
 
+::: {.output .display_data}
+![](8606e31bb62aaf9895d639320d038371d6a22480.png)
+:::
+:::
 
-
-
-    
-![png](output_143_1.png)
-    
-
-
-
-```python
+::: {.cell .code execution_count="121"}
+``` python
 reshape_1=reshape.melt(id_vars='zip',var_name='location_type',value_name='distance')
 
 # Return the result of the melt operation 
@@ -11927,9 +11990,8 @@ reshape_1=reshape.melt(id_vars='zip',var_name='location_type',value_name='distan
 reshape_1
 ```
 
-
-
-
+::: {.output .execute_result execution_count="121"}
+```{=html}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -12011,24 +12073,21 @@ reshape_1
   </tbody>
 </table>
 </div>
+```
+:::
+:::
 
-
-
-
-```python
+::: {.cell .code execution_count="122"}
+``` python
 import seaborn as sns
 sns.barplot(x='zip',y='distance',hue='location_type',data=reshape_1)
 ```
 
-
-
-
+::: {.output .execute_result execution_count="122"}
     <Axes: xlabel='zip', ylabel='distance'>
+:::
 
-
-
-
-    
-![png](output_145_1.png)
-    
-
+::: {.output .display_data}
+![](c52bc5f25327b09267156ff8bf44aa4efdc3a6aa.png)
+:::
+:::
