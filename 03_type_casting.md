@@ -1,3 +1,8 @@
+- 🖊️ **Author:** Khurram Shahzad  
+- 🎓 **Mentor:** Dr. Aammar Tufail  
+- ✉️ **Email:** [khurramamq@gmail.com](mailto:khurramamq@gmail.com)  
+- 💻 **GitHub:** [zkskhurram](https://github.com/zkskhurram/Python_-My_Small_knowledge/tree/main)
+
 # 📘 Type Casting
 
 #### ⚙️ **Type casting** in Python is the process of converting one data type into another.
