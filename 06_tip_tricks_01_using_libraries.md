@@ -1,4 +1,4 @@
--💡 **Subject** : tip_tricks_01_using_libraries\
+- 💡 **Subject** : tip_tricks_01_using_libraries\
 - 🖊️ **Author:** Khurram Shahzad  
 - 🎓 **Mentor:** Dr. Aammar Tufail  
 - ✉️ **Email:** [khurramamq@gmail.com](mailto:khurramamq@gmail.com)  
