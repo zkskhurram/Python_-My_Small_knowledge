@@ -155,7 +155,9 @@ pip install requests pandas numpy matplotlib beautifulsoup4 scikit-learn tensorf
 ---
 
 ### 📘 Author Note
-Created by         **Khurram Shahzad**  
-Mentored by        **Dr.Aammar Tufail**
+- 🖊️ **Author:** Khurram Shahzad  
+- 🎓 **Mentor:** Dr. Aammar Tufail  
+- ✉️ **Email:** [khurramamq@gmail.com](mailto:khurramamq@gmail.com)  
+- 💻 **GitHub:** [zkskhurram](https://github.com/zkskhurram/Python_-My_Small_knowledge/tree/main)
 
 Professional educational reference for learning and practical development use.
