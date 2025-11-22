@@ -1,3 +1,8 @@
+- 🖊️ **Author:** Khurram Shahzad  
+- 🎓 **Mentor:** Dr. Aammar Tufail  
+- ✉️ **Email:** [khurramamq@gmail.com](mailto:khurramamq@gmail.com)  
+- 💻 **GitHub:** [zkskhurram](https://github.com/zkskhurram/Python_-My_Small_knowledge/tree/main)
+  
 ⚙️ **Popular Python Libraries and Their Uses**
 | 🧩 **Library**      | 🎯 **Purpose / Use**                                                                   |
 | ------------------- | -------------------------------------------------------------------------------------- |
