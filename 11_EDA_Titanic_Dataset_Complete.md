@@ -1,7 +1,9 @@
-⚡ **Subject** : 10 Minutes to pandas — Enhanced Guide\
-🖊️ **Author**  : Khurram Shahzad \
-🎓 **Mentor**  : Dr. Aammar Tufail\
-🔗 **Contact** : khurramamq@gmail.com // [https://github.com/zkskhurram/Python_-My_Small_knowledge/edit/main](https://github.com/zkskhurram/Python_-My_Small_knowledge/tree/main)
+- ⚡ **Subject** : 10 Minutes to pandas — Enhanced Guide\
+- 🖊️ **Author:** Khurram Shahzad  
+- 🎓 **Mentor:** Dr. Aammar Tufail  
+- ✉️ **Email:** [khurramamq@gmail.com](mailto:khurramamq@gmail.com)  
+- 💻 **GitHub:** [zkskhurram](https://github.com/zkskhurram/Python_-My_Small_knowledge/tree/main)
+  
 
 # 🚢 EDA & Data Wrangling on Titanic Dataset (`sns.load_dataset('titanic')`)
 
